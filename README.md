@@ -54,9 +54,12 @@ import {loadGLTF, loadTexture} from "./libs/loader.js";
 
 const THREE = window.MINDAR.FACE.THREE;
 
-document.addEventListener('DOMContentLoaded', () => {
-  const start = async () => {
-    const mindarThree = new window.MINDAR.FACE.MindARThree({
+document.addEventListener('DOMContentLoaded', ()
+{
+  const start = async ()
+ {
+    const mindarThree = new window.MINDAR.FACE.MindARThree
+    ({
       container: document.body,
     });
     const {renderer, scene, camera} = mindarThree;  
@@ -69,7 +72,8 @@ faceMesh.material.transparent = true;
 faceMesh.material.needsUpdate = true;
 scene.add(faceMesh);
     await mindarThree.start();
-    renderer.setAnimationLoop(() => {
+    renderer.setAnimationLoop(()
+   {
         renderer.render(scene, camera);
     });
   } 
